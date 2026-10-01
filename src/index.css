@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fredoka", cursive, sans-serif;
+  --font-serif-book: "Source Serif 4", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-serif-book {
+    font-family: var(--font-serif-book);
+  }
+  .book-page-shadow {
+    box-shadow: 0 15px 35px -5px rgba(45, 25, 10, 0.15), 0 8px 12px -6px rgba(45, 25, 10, 0.08);
+  }
+  .book-spine-left {
+    box-shadow: inset 18px 0 25px -12px rgba(40, 20, 10, 0.15);
+  }
+  .book-spine-right {
+    box-shadow: inset -18px 0 25px -12px rgba(40, 20, 10, 0.15);
+  }
+  .paper-texture {
+    background-color: #fdfbf7;
+    background-image: radial-gradient(#e7ded1 0.75px, transparent 0.75px);
+    background-size: 16px 16px;
+  }
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-page-break {
+    page-break-after: always;
+    break-after: page;
+  }
+}

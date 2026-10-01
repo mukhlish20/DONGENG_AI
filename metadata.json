@@ -1,0 +1,6 @@
+{
+  "name": "DongengAI - Generator Storybook Cerdas Berbasis AI",
+  "description": "Aplikasi pembuat buku cerita bergambar interaktif (storybook) bertenaga AI dengan ilustrasi memukau, narasi suara otomatis, kustomisasi karakter, dan mode baca interaktif.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

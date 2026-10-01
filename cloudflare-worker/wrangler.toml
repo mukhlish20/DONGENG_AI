@@ -1,0 +1,12 @@
+name = "dongeng-ai-worker"
+main = "worker.js"
+compatibility_date = "2024-09-23"
+
+# Binding Cloudflare Workers AI bawaan
+[ai]
+binding = "AI"
+
+[vars]
+TEXT_MODEL = "@cf/meta/llama-3.3-70b-instruct"
+IMAGE_MODEL = "@cf/black-forest-labs/flux-2-klein-9b"
+TTS_MODEL = "elevenlabs/eleven-multilingual-v2"
